@@ -1,0 +1,493 @@
+/************************** Global Styles ********************************/
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o--box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+.btn_highlight  {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #e80434;
+  border-radius: 0.45em;
+  padding: .6em 1.8em;
+  transition: box-shadow 0.5s linear 0s;
+}
+
+.btn_highlight:hover {
+  box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.8);
+  -moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.8);
+  -o-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.8);
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.8);
+}
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/************************** Banner Styles ********************************/
+#banner {
+  background-image: linear-gradient(rgba(232, 4, 52, 0.9), rgba(53, 2, 108, 0.9)), url("../img/hero-bg.jpg");
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background-color: #9e0039;
+  opacity: 0.9;
+}
+
+header {
+  padding: 2em 0;
+}
+
+.logo {
+
+}
+
+.navbar {
+  float: right;
+}
+
+.navbar li {
+  float: left;
+  list-style: none;
+  margin-left: 3em;
+}
+
+.navbar li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.menu, .close-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar.active {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .navbar .active ul {
+    margin: 0;
+  }
+
+  .navbar li  {
+      display: block;
+      padding:  1.5em 0;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .navbar li a {
+      display: block;
+      padding: 0 1em;
+    }
+
+    .navbar li a:hover {
+      text-decoration: line-through;
+      transition: all .2s linear 0s;
+    }
+
+    .menu {
+      display: block;
+      float: right;
+    }
+
+    .menu i {
+      font-size: 1.5em;
+      padding-top: .6em;
+      color: #fff;
+    }
+
+    .menu a {
+      color: white;
+    }
+}
+
+.content {
+  padding: 2em 0 12em 0;
+}
+
+.banner-text, .subtitle {
+  color: #ffffff;
+  text-align: center;
+}
+
+.banner-text {
+  font-size: 4em;
+  font-weight: 300;
+  margin-bottom: .2em;
+}
+
+
+
+.subtitle {
+  font-size: 1.1em;
+  font-weight: 200;
+  width: 60%;
+  margin: 0 auto 2em auto;
+  line-height: 2.4em;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.cf:after, .cf:before {
+  content: " ";
+  display: table
+}
+
+.cf:after {
+  clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar.active {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    transition: all .5s linear 0s;
+  }
+
+  .navbar .active ul {
+    margin: 0;
+  }
+
+  .navbar li  {
+      display: block;
+      padding:  1.5em 0;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .navbar li a {
+      display: block;
+      padding: 0 1em;
+    }
+
+    .navbar li a:hover {
+      text-decoration: line-through;
+      transition: all .2s linear 0s;
+    }
+
+    .menu {
+      display: block;
+      float: right;
+    }
+
+    .menu i {
+      font-size: 1.5em;
+      padding-top: .6em;
+      color: #fff;
+    }
+
+    .menu a {
+      color: white;
+    }
+
+    .banner-text {
+      font-size: 3.2em;
+    }
+
+    .subtitle {
+      font-size: 1em;
+      font-weight: 200;
+      width: 70%;
+      line-height: 2em;
+    }
+
+    .btn_highlight  {
+      font-size: 1em;
+      font-weight: 400;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  .banner-text {
+    font-size: 2em;
+  }
+  .subtitle {
+    font-size: .9em;
+  }
+}
+
+
+/************************* Services Styles *************************/
+
+#services {
+  background-color: #e1e1e1;
+  padding: 2em 0 3.2em 0;
+  position: relative;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.service {
+  background: #ffffff;
+  width: 31%;
+  float: left;
+  max-height: 400px;
+  margin: -5em 1% 0 1%;
+  padding: 3em 2.5%;
+  text-align: center;
+  position: relative;
+  border-radius: 0.45em;
+  transition: box-shadow 0.5s linear 0s;
+}
+
+.service:hover {
+  box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  -moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  -o-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+}
+
+
+
+/*.service:after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  height: 50px;
+  border-left: 2px solid #515151;
+}*/
+
+
+.service h3 {
+  font-size: 2em;
+  font-weight: 200;
+  color: #8c00c7;
+  margin: .4em 0;
+}
+
+.service p {
+  color: #515151;
+  font-weight: 200;
+  font-size: .8em;
+  line-height: 2.4em;
+  margin: 0;
+}
+
+/************************* Tools Styles *************************/
+
+#tools {
+  background-color: #ffffff;
+  height: 96px;
+  padding: 1.7em 0em;
+  position: relative;
+
+}
+
+#tools ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+.icons {
+  float: right;
+  width: 100%;
+}
+
+.icons li {
+  float:left;
+  text-decoration: none;
+  list-style: none;
+  margin-right: 9em;
+  transition: all .5s linear 0s;
+}
+
+.icons li:hover img {
+  opacity: 0.6;
+}
+
+.icons li:last-of-type {
+  margin-right: 0;
+}
+
+
+/************************* Our Past Work Styles *************************/
+
+#work {
+  background-image: linear-gradient(rgba(140, 0, 199, 1), rgba(50, 1, 105, 1));
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 25em 0;
+  text-align: center;
+}
+
+.my-work {
+  padding-bottom: 4em;
+}
+
+#work h3, #work p {
+  color: #fff;
+}
+
+#work h3 {
+  font-size: 3em;
+  font-weight: 200;
+}
+
+#work p {
+  font-size: 1.1em;
+  font-weight: 200;
+  width: 800px;
+  margin: 0 auto 2em auto;
+  padding: 0 4em;
+  line-height: 2.4em;
+}
+
+
+#past-work li {
+  list-style: none;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 0px 57px 0px rgba(4,6, 9, 0.25);
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(4,6, 9, 0.25);
+  -moz-box-shadow: 0px 0px 57px 0px rgba(4,6, 9, 0.25);
+  -o-box-shadow: 0px 0px 57px 0px rgba(4,6, 9, 0.25);
+  position: absolute;
+  z-index: 3;
+}
+
+#past-work li img {
+  width: 100%;
+}
+
+#past-work li:first-child {
+  bottom: -40px;
+  left: 0;
+  transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.8, 0.8);
+  -moz-transform: scale(0.8, 0.8);
+  -o-transform: scale(0.8, 0.8);
+  z-index: 2;
+}
+
+#past-work li:nth-child(2) {
+  left: 50%;
+  margin-left: -300px;
+  bottom: 0;
+  z-index: 4;
+}
+
+#past-work li:last-child {
+  bottom: -40px;
+  right: 0;
+  transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.8, 0.8);
+  -moz-transform: scale(0.8, 0.8);
+  -o-transform: scale(0.8, 0.8);
+  z-index: 2;
+}
+
+/************************* Contact Styles *************************/
+
+#contact {
+  background-image:  linear-gradient(rgba(81,81,81, 0.85), rgba(81,81,81, 0.85)), url('../img/tea-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+#contact h3 {
+  font-size: 3em;
+  font-weight: 200;
+  margin-bottom: .3em;
+}
+
+#contact p {
+  font-size: 1.1em;
+  font-weight: 200;
+  width: 1000px;
+  margin: 0 auto 2em auto;
+  padding: 0 4em;
+  line-height: 2.4em;
+}
+
+.btn-lg {
+  padding: 1.2em 3.2em;
+  font-size: 1.35em;
+}
+
+.contact-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background-color: #9e0039;
+  opacity: 0.9;
+}
+
+.contact-us {
+  padding-bottom: 2em;
+}
+
+.social-icons {
+  margin: 3.6em auto;
+  display: inline-block;
+  width: 600px;
+}
+
+.social-icons a {
+    margin-right: 4.2em;
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
+/************************* Footer Styles *************************/
+
+#copyrights {
+  background-color: black;
+  text-align: center;
+  padding: .5em 0;
+}
+
+#copyrights p {
+  color: #fff;
+  font-size: .8em;
+  font-weight: 200;
+}
